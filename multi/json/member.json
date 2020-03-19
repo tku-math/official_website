@@ -1,0 +1,20 @@
+[
+    {
+    "job": "full-time",
+    "name_zh": "楊定揮",
+    "name_en": "Yang,Ting-Hui",
+    "job_title":"專任教授兼系主任",
+    "education":"國立交通大學博士",
+    "experience":{
+        "experience_1":"2010/08~2015/07　淡江大學　副教授",
+        "experience_2":"2004/08~2010/07　淡江大學　助理教授",
+        "experience_3":"2003/08~2004/07　國家理論中心　博士後研究員"
+        }
+    },
+    {
+    "job": "full-time",
+    "name_zh": "黃逸輝",
+    "name_en": "Yang,Ting-Hui",
+    "job_title":"專任教授兼系主任"
+    }
+]
