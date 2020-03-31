@@ -32,28 +32,34 @@ h6 {
     color: #272727;
     left: 0px;
 }
+
 /*
 #introduction .left_menu{
     position: fixed;
 }*/
-#introduction .media-body h4{
+#introduction .media-body h4 {
     font-weight: 600;
     font-family: 'Roboto', sans-serif;
     color: #777777;
     font-size: 14px;
 }
-.page{
+
+.page {
     display: none;
 }
-.page.active{
+
+.page.active {
     display: block;
 }
-.page p{
+
+.page p {
     text-indent: 18px;
 }
-.mb-30{
+
+.mb-30 {
     margin-bottom: 30px;
 }
+
 a {
     color: #45aed6;
     -webkit-transition: color 400ms, background-color 400ms;
@@ -70,6 +76,7 @@ hr {
     border-top: 1px solid #e5e5e5;
     border-bottom: 1px solid #fff;
 }
+
 .gradiant {
     background-image: -webkit-gradient(linear, left top, right top, from(#2caab3), to(#2c8cb3));
     background-image: linear-gradient(90deg, #2caab3 0%, #2c8cb3 100%);
@@ -78,9 +85,11 @@ hr {
 .gradiant-horizontal {
     background-image: linear-gradient(4deg, #2caab3 0%, #2c8cb3 100%);
 }
+
 .section {
     margin-bottom: 50px;
 }
+
 .section-header {
     margin-bottom: 50px;
     margin-top: 50px;
@@ -173,6 +182,7 @@ ul.nostyle i {
         -webkit-transform: scale(0);
         transform: scale(0);
     }
+
     100% {
         opacity: 1;
         -webkit-transform: scale(1);
@@ -186,6 +196,7 @@ ul.nostyle i {
         -webkit-transform: scale(0);
         transform: scale(0);
     }
+
     100% {
         opacity: 1;
         -webkit-transform: scale(1);
@@ -219,10 +230,12 @@ ul.nostyle i {
         -webkit-box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.1);
         box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.1);
     }
+
     #main-menu.navbar-default .navbar-nav>li>a {
         padding-top: 40px;
         padding-bottom: 40px;
     }
+
     #main-menu.navbar-default .navbar-nav>li.active>a,
     #main-menu.navbar-default .navbar-nav>li.open>a,
     #main-menu.navbar-default .navbar-nav>li:hover>a {
@@ -230,6 +243,7 @@ ul.nostyle i {
         padding-top: 37px;
         border-top: 3px solid #45aed6;
     }
+
     #main-menu.navbar-default .dropdown-menu {
         padding: 0 20px;
         min-width: 220px;
@@ -240,6 +254,7 @@ ul.nostyle i {
         -webkit-box-shadow: none;
         background-clip: inherit;
     }
+
     #main-menu.navbar-default .dropdown-menu>li {
         border-left: 3px solid transparent;
         margin-left: -20px;
@@ -248,19 +263,23 @@ ul.nostyle i {
         -webkit-transition: border-color 400ms;
         transition: border-color 400ms;
     }
+
     #main-menu.navbar-default .dropdown-menu>li>a {
         border-top: 1px solid #404455;
         padding: 15px 0;
         color: #eeeeee;
     }
+
     #main-menu.navbar-default .dropdown-menu>li:first-child>a {
         border-top: 0;
     }
+
     #main-menu.navbar-default .dropdown-menu>li.active,
     #main-menu.navbar-default .dropdown-menu>li.open,
     #main-menu.navbar-default .dropdown-menu>li:hover {
         border-left-color: #45aed6;
     }
+
     #main-menu.navbar-default .dropdown-menu>li.active>a,
     #main-menu.navbar-default .dropdown-menu>li.open>a,
     #main-menu.navbar-default .dropdown-menu>li:hover>a {
@@ -392,9 +411,10 @@ ul.nostyle i {
     padding: 100px 0;
 }
 
-#program{
+#program {
     padding: 100px 0;
 }
+
 #introduction .media.service-box:first-child {
     margin-top: 8px;
 }
@@ -454,7 +474,7 @@ ul.nostyle i {
     display: inline-block;
 }
 
-#introduction .calculus-filter a{
+#introduction .calculus-filter a {
     font-family: 'Roboto', sans-serif;
     color: #777777;
     font-size: 14px;
@@ -478,7 +498,11 @@ ul.nostyle i {
 #introduction .calculus-item .calculus-item-inner {
     position: relative;
 }
-
+@media (max-width:768px) {
+    #introduction .calculus-item .calculus-item-inner .calculus-info {
+        visibility:hidden;
+    }
+}
 #introduction .calculus-item .calculus-item-inner .calculus-info {
     opacity: 0;
     transition: opacity 400ms;
@@ -519,7 +543,81 @@ ul.nostyle i {
     opacity: 1;
 }
 
+/* lightbox */
+#introduction .lightbox {
+    display: none;
+}
+#introduction .lightbox h1{
+    font-size: 30px;
+}
+#introduction .lightbox .calculus_info h2{
+    font-size: 25px;
+    line-height: 12px;
+}
+#introduction .lightbox .calculus_info h3{
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 12px;
+}
 
+/* Opened lightbox */
+#introduction .lightbox:target {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Lightbox content */
+#introduction .lightbox figcaption {
+    width: 80rem;
+    position: relative;
+    top: 25px;
+    padding: 1.5em;
+    background-color: white;
+    margin: auto;
+    z-index: 1;
+}
+
+/* Close button */
+#introduction .lightbox .close {
+    position: relative;
+    display: block;
+    top: 25px;
+}
+
+#introduction .lightbox .close::after {
+    right: -1rem;
+    top: -1rem;
+    width: 2rem;
+    height: 2rem;
+    position: absolute;
+    display: flex;
+    z-index: 1;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+    border-radius: 50%;
+    color: white;
+    content: "×";
+    cursor: pointer;
+}
+
+/* Lightbox overlay */
+#introduction .lightbox .close::before {
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    background-color: rgba(0, 0, 0, .7);
+    content: "";
+    cursor: default;
+}
 
 .nav.main-tab {
     background: #eee;
@@ -600,8 +698,8 @@ ul.nostyle i {
     padding-bottom: 30px;
     color: #fff;
     background: #2e2e2e;
-    text-align:center
-    
+    text-align: center;
+    z-index: -1;
 }
 
 #footer a {
