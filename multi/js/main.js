@@ -40,21 +40,6 @@ jQuery(function ($) {
 		})
 	};
 
-	$('#tohash').on('click', function () {
-		$('html, body').animate({
-			scrollTop: $(this.hash).offset().top - 5
-		}, 1000);
-		return false;
-	});
-
-	// accordian
-	$('.accordion-toggle').on('click', function () {
-		$(this).closest('.panel-group').children().each(function () {
-			$(this).find('>.panel-heading').removeClass('active');
-		});
-
-		$(this).closest('.panel-heading').toggleClass('active');
-	});
 
 	//Slider
 	$(document).ready(function () {
@@ -191,6 +176,5 @@ jQuery(function ($) {
 		event.preventDefault();
 		$(this).ekkoLightbox();
 	});
-	//Modal Box
 	
 });

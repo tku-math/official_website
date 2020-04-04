@@ -892,16 +892,17 @@ hr {
 }
 
 
-/* test */
+/* Pagination */
 
-
-.announcementList ul {
+.announcementList ul,
+.eventList ul {
     margin: 0;
     padding: 0;
     list-style: none;
 }
 
-.announcementList ul li {
+.announcementList ul li,
+.eventList ul li {
     display: inline-block;
     float: left;
     margin-right: 15px;
@@ -909,18 +910,9 @@ hr {
     color: #64686d;
 }
 
-.announcementInfo {
-    padding: 10px;
-    text-align: center;
-    border-top: 1px solid #eee;
-}
-
-.announcementModal {
-    text-align: center;
-}
-
 /*Pagination CSS*/
-#page_navigation {
+#page_navigation,
+#page_navigation1 {
     width: 100%;
     max-width: 940px;
     margin: 0 auto;
@@ -929,7 +921,8 @@ hr {
     padding: 30px 0;
 }
 
-#page_navigation a {
+#page_navigation a,
+#page_navigation1 a {
     display: inline-block;
     padding: 10px 18px;
     color: #64686D;
@@ -939,7 +932,8 @@ hr {
     padding: 0;
     text-align: center;
 }
-.active_page {
+.active_page ,
+.active_page1 {
     background: #337ab7;
     color: white !important;
     background-color: #45aed6;
