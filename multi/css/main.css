@@ -895,13 +895,13 @@ hr {
 /* test */
 
 
-.physicianList ul {
+.announcementList ul {
     margin: 0;
     padding: 0;
     list-style: none;
 }
 
-.physicianList ul li {
+.announcementList ul li {
     display: inline-block;
     float: left;
     margin-right: 15px;
@@ -909,13 +909,13 @@ hr {
     color: #64686d;
 }
 
-.physicianInfo {
+.announcementInfo {
     padding: 10px;
     text-align: center;
     border-top: 1px solid #eee;
 }
 
-.physicianModal {
+.announcementModal {
     text-align: center;
 }
 
