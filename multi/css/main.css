@@ -19,6 +19,7 @@ body {
     font-weight: 400;
     color: #64686d;
     line-height: 26px;
+    background-position: center center;
 }
 
 h1,
@@ -32,15 +33,17 @@ h6 {
     color: #272727;
 }
 
-img{
+img {
     width: auto;
-	height: auto;
-	max-width: 100%;
-	max-height: 100%;
+    height: auto;
+    max-width: 100%;
+    max-height: 100%;
 }
-.mb-30{
+
+.mb-30 {
     margin-bottom: 30px;
 }
+
 a {
     color: #45aed6;
     -webkit-transition: color 400ms, background-color 400ms;
@@ -49,14 +52,17 @@ a {
 }
 
 #news {
-    padding: 100px 0 75px;
-    background-color: #f5f5f5;
+    padding: 100px 0;
 }
 
-#news h3{
+#news h3 {
     text-align: center;
 }
 
+#news .announcement_event_more {
+    display: none;
+    background-attachment: scroll;
+}
 
 a:hover,
 a:focus {
@@ -77,9 +83,11 @@ hr {
 .gradiant-horizontal {
     background-image: linear-gradient(4deg, #2caab3 0%, #2c8cb3 100%);
 }
+
 .section {
     margin-bottom: 50px;
 }
+
 .section-header {
     margin-bottom: 50px;
     margin-top: 50px;
@@ -151,47 +159,6 @@ hr {
     border-bottom: 1px solid #45aed6;
 }
 
-ul.nostyle {
-    list-style: none;
-    padding: 0;
-    margin-bottom: 20px;
-}
-
-ul.nostyle i {
-    color: #45aed6;
-}
-
-.scaleIn {
-    -webkit-animation-name: scaleIn;
-    animation-name: scaleIn;
-}
-
-@-webkit-keyframes scaleIn {
-    0% {
-        opacity: 0;
-        -webkit-transform: scale(0);
-        transform: scale(0);
-    }
-    100% {
-        opacity: 1;
-        -webkit-transform: scale(1);
-        transform: scale(1);
-    }
-}
-
-@keyframes scaleIn {
-    0% {
-        opacity: 0;
-        -webkit-transform: scale(0);
-        transform: scale(0);
-    }
-    100% {
-        opacity: 1;
-        -webkit-transform: scale(1);
-        transform: scale(1);
-    }
-}
-
 
 /*************************
 *******Header******
@@ -218,10 +185,12 @@ ul.nostyle i {
         -webkit-box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.1);
         box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.1);
     }
+
     #main-menu.navbar-default .navbar-nav>li>a {
         padding-top: 40px;
         padding-bottom: 40px;
     }
+
     #main-menu.navbar-default .navbar-nav>li.active>a,
     #main-menu.navbar-default .navbar-nav>li.open>a,
     #main-menu.navbar-default .navbar-nav>li:hover>a {
@@ -229,6 +198,7 @@ ul.nostyle i {
         padding-top: 37px;
         border-top: 3px solid #45aed6;
     }
+
     #main-menu.navbar-default .dropdown-menu {
         padding: 0 20px;
         min-width: 220px;
@@ -239,6 +209,7 @@ ul.nostyle i {
         -webkit-box-shadow: none;
         background-clip: inherit;
     }
+
     #main-menu.navbar-default .dropdown-menu>li {
         border-left: 3px solid transparent;
         margin-left: -20px;
@@ -247,19 +218,23 @@ ul.nostyle i {
         -webkit-transition: border-color 400ms;
         transition: border-color 400ms;
     }
+
     #main-menu.navbar-default .dropdown-menu>li>a {
         border-top: 1px solid #404455;
         padding: 15px 0;
         color: #eeeeee;
     }
+
     #main-menu.navbar-default .dropdown-menu>li:first-child>a {
         border-top: 0;
     }
+
     #main-menu.navbar-default .dropdown-menu>li.active,
     #main-menu.navbar-default .dropdown-menu>li.open,
     #main-menu.navbar-default .dropdown-menu>li:hover {
         border-left-color: #45aed6;
     }
+
     #main-menu.navbar-default .dropdown-menu>li.active>a,
     #main-menu.navbar-default .dropdown-menu>li.open>a,
     #main-menu.navbar-default .dropdown-menu>li:hover>a {
@@ -387,15 +362,15 @@ ul.nostyle i {
     color: #45aed6;
 }
 
-#introduction {
+#news {
     padding: 100px 0;
 }
 
-#program{
+#program {
     padding: 100px 0;
 }
 
-#introduction .media.service-box:first-child {
+#news .media.service-box:first-child {
     margin-top: 8px;
 }
 
@@ -690,12 +665,12 @@ ul.nostyle i {
     background-color: #f5f5f5;
 }
 
-#members h3{
-    text-align:center;
+#members h3 {
+    text-align: center;
 }
 
-#members p{
-    text-align:center;
+#members p {
+    text-align: center;
 }
 
 #members .team-member {
@@ -855,7 +830,7 @@ ul.nostyle i {
     padding-bottom: 30px;
     color: #fff;
     background: #2e2e2e;
-    text-align:center
+    text-align: center
 }
 
 #footer a {
@@ -886,4 +861,114 @@ ul.nostyle i {
 .form-control {
     box-shadow: none;
     -webkit-box-shadow: none;
+}
+
+/*owo*/
+.pagination {
+    width: 100%;
+    max-width: 940px;
+    margin: 0 auto;
+    position: relative;
+    text-align: center;
+    padding: 30px 0;
+}
+
+.pagination ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+.pagination a {
+    display: inline-block;
+    padding: 10px 18px;
+    color: #64686D;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    padding: 0;
+    text-align: center;
+}
+
+.pagination a.is-active {
+    background-color: #45aed6;
+    border-radius: 100%;
+    color: #fff;
+}
+/* lightbox */
+#news .lightbox {
+    display: none;
+}
+#news .lightbox h1{
+    font-size: 30px;
+}
+#news .lightbox .calculus_info h2{
+    font-size: 25px;
+    line-height: 12px;
+}
+#news .lightbox .calculus_info h3{
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 12px;
+}
+
+/* Opened lightbox */
+#news .lightbox:target {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Lightbox content */
+#news .lightbox figcaption {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    position: relative;
+    top: 675px;
+    padding: 1.5em;
+    background-color: white;
+    margin: auto;
+    z-index: 1;
+}
+
+/* Close button */
+#news .lightbox .close {
+    position: relative;
+    display: block;
+    top: 5px;
+}
+
+#news .lightbox .close::after {
+    right: -1rem;
+    top: -1rem;
+    width: 2rem;
+    height: 2rem;
+    position: absolute;
+    display: flex;
+    z-index: 1;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+    border-radius: 50%;
+    color: white;
+    content: "×";
+    cursor: pointer;
+}
+
+/* Lightbox overlay */
+#news .lightbox .close::before {
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    background-color: rgba(0, 0, 0, .7);
+    content: "";
+    cursor: default;
 }

@@ -185,6 +185,11 @@ jQuery(function ($) {
 	$("a[rel^='prettyPhoto']").prettyPhoto({
 		social_tools: false
 	});
-
-
+	//LightBox
+	$(document).on('click', '[data-toggle="lightbox"]', function(event) {
+		event.preventDefault();
+		$(this).ekkoLightbox();
+	});
+	//Modal Box
+	
 });

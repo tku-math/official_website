@@ -69,46 +69,12 @@ div.pp_default .pp_contract:hover {
     cursor: pointer
 }
 
-div.pp_default .pp_close {
-    width: 30px;
-    height: 30px;
-    background: url(../images/prettyPhoto/default/sprite.png) 2px 1px no-repeat;
-    cursor: pointer
-}
 
 div.pp_default .pp_gallery ul li a {
     background: url(../images/prettyPhoto/default/default_thumb.png) center center #f8f8f8;
     border: 1px solid #aaa
 }
 
-div.pp_default .pp_social {
-    margin-top: 7px
-}
-
-div.pp_default .pp_gallery a.pp_arrow_previous,
-div.pp_default .pp_gallery a.pp_arrow_next {
-    position: static;
-    left: auto
-}
-
-div.pp_default .pp_nav .pp_play,
-div.pp_default .pp_nav .pp_pause {
-    background: url(../images/prettyPhoto/default/sprite.png) -51px 1px no-repeat;
-    height: 30px;
-    width: 30px
-}
-
-div.pp_default .pp_nav .pp_pause {
-    background-position: -51px -29px
-}
-
-div.pp_default a.pp_arrow_previous,
-div.pp_default a.pp_arrow_next {
-    background: url(../images/prettyPhoto/default/sprite.png) -31px -3px no-repeat;
-    height: 20px;
-    width: 20px;
-    margin: 4px 0 0
-}
 
 div.pp_default a.pp_arrow_next {
     left: 52px;
@@ -467,128 +433,6 @@ div.light_square .pp_previous:hover {
     cursor: pointer
 }
 
-div.facebook .pp_top .pp_left {
-    background: url(../images/prettyPhoto/facebook/sprite.png) -88px -53px no-repeat
-}
-
-div.facebook .pp_top .pp_middle {
-    background: url(../images/prettyPhoto/facebook/contentPatternTop.png) top left repeat-x
-}
-
-div.facebook .pp_top .pp_right {
-    background: url(../images/prettyPhoto/facebook/sprite.png) -110px -53px no-repeat
-}
-
-div.facebook .pp_content_container .pp_left {
-    background: url(../images/prettyPhoto/facebook/contentPatternLeft.png) top left repeat-y
-}
-
-div.facebook .pp_content_container .pp_right {
-    background: url(../images/prettyPhoto/facebook/contentPatternRight.png) top right repeat-y
-}
-
-div.facebook .pp_expand {
-    background: url(../images/prettyPhoto/facebook/sprite.png) -31px -26px no-repeat;
-    cursor: pointer
-}
-
-div.facebook .pp_expand:hover {
-    background: url(../images/prettyPhoto/facebook/sprite.png) -31px -47px no-repeat;
-    cursor: pointer
-}
-
-div.facebook .pp_contract {
-    background: url(../images/prettyPhoto/facebook/sprite.png) 0 -26px no-repeat;
-    cursor: pointer
-}
-
-div.facebook .pp_contract:hover {
-    background: url(../images/prettyPhoto/facebook/sprite.png) 0 -47px no-repeat;
-    cursor: pointer
-}
-
-div.facebook .pp_close {
-    width: 22px;
-    height: 22px;
-    background: url(../images/prettyPhoto/facebook/sprite.png) -1px -1px no-repeat;
-    cursor: pointer
-}
-
-div.facebook .pp_description {
-    margin: 0 37px 0 0
-}
-
-div.facebook .pp_loaderIcon {
-    background: url(../images/prettyPhoto/facebook/loader.gif) center center no-repeat
-}
-
-div.facebook .pp_arrow_previous {
-    background: url(../images/prettyPhoto/facebook/sprite.png) 0 -71px no-repeat;
-    height: 22px;
-    margin-top: 0;
-    width: 22px
-}
-
-div.facebook .pp_arrow_previous.disabled {
-    background-position: 0 -96px;
-    cursor: default
-}
-
-div.facebook .pp_arrow_next {
-    background: url(../images/prettyPhoto/facebook/sprite.png) -32px -71px no-repeat;
-    height: 22px;
-    margin-top: 0;
-    width: 22px
-}
-
-div.facebook .pp_arrow_next.disabled {
-    background-position: -32px -96px;
-    cursor: default
-}
-
-div.facebook .pp_nav {
-    margin-top: 0
-}
-
-div.facebook .pp_nav p {
-    font-size: 15px;
-    padding: 0 3px 0 4px
-}
-
-div.facebook .pp_nav .pp_play {
-    background: url(../images/prettyPhoto/facebook/sprite.png) -1px -123px no-repeat;
-    height: 22px;
-    width: 22px
-}
-
-div.facebook .pp_nav .pp_pause {
-    background: url(../images/prettyPhoto/facebook/sprite.png) -32px -123px no-repeat;
-    height: 22px;
-    width: 22px
-}
-
-div.facebook .pp_next:hover {
-    background: url(../images/prettyPhoto/facebook/btnNext.png) center right no-repeat;
-    cursor: pointer
-}
-
-div.facebook .pp_previous:hover {
-    background: url(../images/prettyPhoto/facebook/btnPrevious.png) center left no-repeat;
-    cursor: pointer
-}
-
-div.facebook .pp_bottom .pp_left {
-    background: url(../images/prettyPhoto/facebook/sprite.png) -88px -80px no-repeat
-}
-
-div.facebook .pp_bottom .pp_middle {
-    background: url(../images/prettyPhoto/facebook/contentPatternBottom.png) top left repeat-x
-}
-
-div.facebook .pp_bottom .pp_right {
-    background: url(../images/prettyPhoto/facebook/sprite.png) -110px -80px no-repeat
-}
-
 div.pp_pic_holder a:focus {
     outline: none
 }
@@ -782,12 +626,9 @@ a.pp_contract {
 }
 
 a.pp_close {
-    position: absolute;
-    right: 0;
-    top: 0;
+    position: relative;
     display: block;
-    line-height: 22px;
-    text-indent: -10000px
+    top: 25px;
 }
 
 .pp_loaderIcon {

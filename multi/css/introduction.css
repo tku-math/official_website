@@ -543,6 +543,7 @@ ul.nostyle i {
     opacity: 1;
 }
 
+
 /* lightbox */
 #introduction .lightbox {
     display: none;
@@ -577,6 +578,7 @@ ul.nostyle i {
     width: 80rem;
     position: relative;
     top: 25px;
+    left: 50%;
     padding: 1.5em;
     background-color: white;
     margin: auto;

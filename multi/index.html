@@ -16,6 +16,8 @@
     <link href="css/prettyPhoto.css" rel="stylesheet">
     <link href="css/main.css" rel="stylesheet">
     <link href="css/responsive.css" rel="stylesheet">
+    <link href="css/ekko-lightbox.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
     <!--[if lt IE 9]>
     <script src="js/html5shiv.js"></script>
     <script src="js/respond.min.js"></script>
@@ -29,7 +31,6 @@
 <!--/head-->
 
 <body id="home" class="homepage">
-
     <header id="header">
         <nav id="main-menu" class="navbar navbar-default navbar-fixed-top" role="banner">
             <div class="container">
@@ -107,39 +108,47 @@
             <div class="row">
                 <div class="col-sm-6 wow fadeInDown">
                     <h3>系所公告</h3>
-                    <a href="#announcement_news_0" rel="prettyPhoto">108中央研究院周鴻經獎學金開始接受申請，請有意申請的同學至生輔組網站提出申請。</a>
-                    <li class="fa fa-clock-o">發佈時間: 2019-09-03, 週二</li><br><br>
-                    <a href="#announcement_news_more" rel="prettyPhoto">More Articles...</a>
-                </div>
-                <div id="announcement_news_0" style="display: none;">
-                    <div class="container col-sm-12">
-                        <h2>中央研究院108學年度周鴻經獎學金即日起開放申請</h2>
-                        <p>關於周鴻經獎學金，章程可參考連結：
-                            <a href="http://www.math.sinica.edu.tw/www/student/chou_scholarship14_c.jsp">http://www.math.sinica.edu.tw/www/student/chou_scholarship14_c.jsp</a><br>
-                            請於2019年10月31日前，檢附</p>
-                        <li>周鴻經獎學金申請書</li>
-                        <li>志向說明書(中、英文各一份)</li>
-                        <li>在學各學年之成績單（碩士班一年級研究生須繳大學之成績單）</li>
-                        <li>周鴻經獎學金推薦書</li>
-                        <li>數學相關系所之教授二人以上之推薦書（如附），由校方函送中央研究院數學研究所申請。</li>
-                        <p>備註：本獎學金只限在台灣就讀的學生申請。</p>
+                    <div>
+                        <a class="preview" href="#owo">owo</a><br>
+                    </div>
+                    <a href="#announcement_Info_0"
+                        rel="prettyPhoto">7/15-7/17舉辦第二屆海峽兩岸反譜問題與相關課題暨慶祝數學系創系60週年學術研討會，歡迎報名參加。</a>
+                    <li class="fa fa-clock-o">發佈時間: 2019-04-25, 週四 </li><br>
+                    <div class="pagination">
+                        <ul>
+                            <a href="#"><li><</li></a>
+                            <a class="is-active" href="#"><li>1</li></a>
+                            <a href="#"><li>2</li></a>
+                            <a href="#"><li>3</li></a>
+                            <a href="#"><li>4</li></a>
+                            <a href="#"><li>5</li></a>
+                            <a href="#"><li>6</li></a>
+                            <a href="#"><li>></li></a>
+                        </ul>
                     </div>
                 </div>
                 <div class="col-sm-6 wow fadeInDown">
                     <h3>學術活動</h3>
-                    <a href="#announcement_event_0" rel="prettyPhoto">7/15-7/17舉辦第二屆海峽兩岸反譜問題與相關課題暨慶祝數學系創系60週年學術研討會，歡迎報名參加。</a>
+                    <a href="#announcement_event_0"
+                        rel="prettyPhoto">7/15-7/17舉辦第二屆海峽兩岸反譜問題與相關課題暨慶祝數學系創系60週年學術研討會，歡迎報名參加。</a>
                     <li class="fa fa-clock-o">發佈時間: 2019-04-25, 週四 </li><br><br>
                     <a href="#announcement_event_more" rel="prettyPhoto">More Articles...</a>
                 </div>
-                <div id="announcement_event_0" style="display: none;">
+                <div id="announcement_event_more" style="display: none; background-position:left top;">
                     <div class="container col-sm-12">
-                        <h2>第二屆海峽兩岸反譜問題與相關課題暨慶祝淡江大學數學系創系60週年學術研討會</h2>
-                        <p>日期： July 15 /2019 ~ July  17/2019</p>
-                        <p>地點： 淡江大學數學系</p>
-                        <p>研討會網站及報名網址： <a href="https://conferences.math.tku.edu.tw">https://conferences.math.tku.edu.tw</a></p>
-                        <img src="images/海報20190425.jpg">
+                        <h2>系所公告</h2>
+                        <a href="#announcement_news_0" rel="prettyPhoto">108中央研究院周鴻經獎學金開始接受申請，請有意申請的同學至生輔組網站提出申請。</a>
+                        <li class="fa fa-clock-o">發佈時間: 2019-09-03, 週二</li>
                     </div>
                 </div>
+            </div>
+            <div class="lightbox col-sm-6" id="owo">
+                <figure>
+                    <a href="#" class="close"></a>
+                    <figcaption>
+                    <h1>ouo</h1>
+                    </figcaption>
+                </figure>
             </div>
         </div>
     </section>
@@ -636,7 +645,14 @@
     <script src="js/jquery.inview.min.js"></script>
     <script src="js/wow.min.js"></script>
     <script src="js/main.js"></script>
-    <script src="js/json.js"></script>
+    <script src="js/ekko-lightbox.js"></script>
+    <script src="js/ekko-lightbox.min.js"></script>
+    <!-- material design js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.3/js/materialize.min.js"></script>
+
+    <!-- include angular js -->
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.15/angular.min.js"></script>
+
 </body>
 
 </html>
