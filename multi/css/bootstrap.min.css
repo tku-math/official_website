@@ -4684,17 +4684,21 @@ select[multiple].input-group-sm>.input-group-btn>.btn {
         border-bottom-color: #fff
     }
 }
-
+.nav-pills {
+    margin-left:2%;
+}
 .nav-pills>li {
-    float: left
+    float: left;
+    padding: 3px;
 }
 
 .nav-pills>li>a {
-    border-radius: 4px
+    border-radius: 4px;
+    padding: 5px;
 }
 
 .nav-pills>li+li {
-    margin-left: 2px
+    margin-left: 0px
 }
 
 .nav-pills>li.active>a,

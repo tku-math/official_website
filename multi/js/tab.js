@@ -24,7 +24,6 @@ function hide(DOM) {
 }
 
 function EventHandler(DOMList, index) {
-	console.log(DOMList)
 	DOMList.forEach(function (item) {
 		hide(item.tab);
 		hide(item.page);

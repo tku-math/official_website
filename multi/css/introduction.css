@@ -33,10 +33,12 @@ h6 {
     left: 0px;
 }
 
-/*
-#introduction .left_menu{
-    position: fixed;
-}*/
+@media screen and (max-width:992px) {
+    #introduction .left_menu .pull-left{
+        display: none;
+    }
+}
+
 #introduction .media-body h4 {
     font-weight: 600;
     font-family: 'Roboto', sans-serif;
@@ -287,6 +289,27 @@ ul.nostyle i {
         background-color: transparent;
     }
 }
+
+@media only screen and (max-width: 768px) {
+    #left_menu. {
+        background: rgba(255, 255, 255, 1);
+        -webkit-box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.1);
+        box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.1);
+    }
+    #left_menu .nav-item>li>a {
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+
+    #left_menu .nav-item>li.active>a,
+    #left_menu .nav-item>li.open>a,
+    #left_menu .nav-item>li:hover>a {
+        background: transparent;
+        padding-top: 37px;
+        border-top: 3px solid #45aed6;
+    }
+}
+
 
 #main-slider {
     overflow: hidden;

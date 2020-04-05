@@ -61,50 +61,80 @@
     <!--/header-->
     <section id="introduction">
         <div class="container">
-            <div class="row">
-                <div class="left_menu wow fadeInLeft col-sm-2" role="tablist">
-                    <div class="tab media service-box wow fadeInRight" style="cursor:pointer" id="tab_1">
-                        <div class="pull-left">
-                            <i class="fa"></i>
-                        </div>
-                        <div class="media-body">
-                            <h4 class="media-heading">招生資訊</h4>
-                        </div>
-                    </div>
-                    <div class="tab media service-box wow fadeInRight" style="cursor:pointer" id="tab_2">
-                        <div class="pull-left">
-                            <i class="fa"></i>
-                        </div>
-                        <div class="media-body">
-                            <h4 class="media-heading">課程規劃</h4>
-                        </div>
-                    </div>
-                    <div class="tab media service-box wow fadeInRight" style="cursor:pointer" id="tab_3">
-                        <div class="pull-left">
-                            <i class="fa"></i>
-                        </div>
-                        <div class="media-body">
-                            <h4 class="media-heading">碩士班修讀規則</h4>
-                        </div>
-                    </div>
-                    <div class="tab media service-box wow fadeInRight" style="cursor:pointer" id="tab_4">
-                        <div class="pull-left">
-                            <i class="fa"></i>
-                        </div>
-                        <div class="media-body">
-                            <h4 class="media-heading">博士班修讀規則</h4>
-                        </div>
-                    </div>
-                    <div class="tab media service-box wow fadeInRight" style="cursor:pointer" id="tab_5">
-                        <div class="pull-left">
-                            <i class="fa"></i>
-                        </div>
-                        <div class="media-body">
-                            <h4 class="media-heading">獎助學金</h4>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-sm-2"></div>
+            <div class="row" id="left_menu">
+                <script>
+                    if (window.innerWidth < 768) {
+                        document.getElementById('left_menu').innerHTML =`
+                        <ul class="nav nav-pills mb-3 fadeInUp" id="pills-tab" role="tablist">
+                            <li class="nav-item">
+                                <a class="nav-link active" id="tab_1" data-toggle="pill" role="tab"
+                                    aria-controls="pills-home" aria-selected="true">招生資訊</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" id="tab_2" data-toggle="pill" role="tab"
+                                    aria-controls="pills-profile" aria-selected="false">課程規劃</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" id="tab_3" data-toggle="pill" role="tab"
+                                    aria-controls="pills-contact" aria-selected="false">碩士班修讀規則</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" id="tab_4" data-toggle="pill" role="tab"
+                                    aria-controls="pills-contact" aria-selected="false">博士班修讀規則</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" id="tab_5" data-toggle="pill" role="tab"
+                                    aria-controls="pills-contact" aria-selected="false">獎助學金</a>
+                            </li>
+                        </ul>
+                        `
+                    } else {
+                        document.getElementById('left_menu').innerHTML = `
+                        <div class="left_menu wow fadeInLeft col-sm-2" role="tablist">
+                            <div class="tab media service-box wow fadeInRight" style="cursor:pointer" id="tab_1">
+                                <div class="pull-left">
+                                    <i class="fa"></i>
+                                </div>
+                                <div class="media-body">
+                                    <h4 class="media-heading">招生資訊</h4>
+                                </div>
+                            </div>
+                            <div class="tab media service-box wow fadeInRight" style="cursor:pointer" id="tab_2">
+                                <div class="pull-left">
+                                    <i class="fa"></i>
+                                </div>
+                                <div class="media-body">
+                                    <h4 class="media-heading">課程規劃</h4>
+                                </div>
+                            </div>
+                            <div class="tab media service-box wow fadeInRight" style="cursor:pointer" id="tab_3">
+                                <div class="pull-left">
+                                    <i class="fa"></i>
+                                </div>
+                                <div class="media-body">
+                                    <h4 class="media-heading">碩士班修讀規則</h4>
+                                </div>
+                            </div>
+                            <div class="tab media service-box wow fadeInRight" style="cursor:pointer" id="tab_4">
+                                <div class="pull-left">
+                                    <i class="fa"></i>
+                                </div>
+                                <div class="media-body">
+                                    <h4 class="media-heading">碩士班修讀規則</h4>
+                                </div>
+                            </div>
+                            <div class="tab media service-box wow fadeInRight" style="cursor:pointer" id="tab_5">
+                                <div class="pull-left">
+                                    <i class="fa"></i>
+                                </div>
+                                <div class="media-body" role="presentation" class="active">
+                                    <h4 href="#tab" role="tab" data-toggle="tab" aria-controls="tab1" aria-expanded="true"
+                                        class="media-heading">獎助學金</h4>
+                                </div>
+                            </div>
+                        </div>`;
+                    }
+                </script>
                 <div class="col-sm-10">
                     <div class="page wow fadeInRight" id="page_1">
                         <h2>招生資訊</h2>

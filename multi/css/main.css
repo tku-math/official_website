@@ -833,11 +833,13 @@ hr {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
-    position: fixed;
+    position: relative;
     padding: 1.5em;
     background-color: white;
     margin: auto;
     z-index: 1;
+    display: inline-block;
+    vertical-align: middle;
 }
 
 /* Close button */
@@ -848,20 +850,15 @@ hr {
 }
 
 #news .lightbox .close::after {
-    right: -1rem;
-    top: -1rem;
-    width: 2rem;
-    height: 2rem;
-    position: fixed;
-    display: flex;
-    z-index: 1;
-    align-items: center;
-    justify-content: center;
-    background-color: black;
-    border-radius: 50%;
-    color: white;
-    content: "×";
-    cursor: pointer;
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 0;
+    background-color: #000;
+    opacity: .5
 }
 
 /* Lightbox overlay */
@@ -874,23 +871,9 @@ hr {
     background-color: rgba(0, 0, 0, .7);
     content: "";
     cursor: default;
+
 }
 
-.page {
-    display: none;
-}
-
-.page.active {
-    display: block;
-}
-
-.playground {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    height: 100%;
-}
 
 
 /* Pagination */
@@ -933,7 +916,8 @@ hr {
     padding: 0;
     text-align: center;
 }
-.active_page ,
+
+.active_page,
 .active_page1 {
     background: #337ab7;
     color: white !important;

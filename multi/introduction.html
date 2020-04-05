@@ -60,50 +60,80 @@
     <!--/header-->
     <section id="introduction">
         <div class="container">
-            <div class="row">
-                <div class="left_menu wow fadeInLeft col-sm-2" role="tablist">
-                    <div class="tab media service-box wow fadeInRight" style="cursor:pointer" id="tab_1">
-                        <div class="pull-left">
-                            <i class="fa"></i>
-                        </div>
-                        <div class="media-body">
-                            <h4 class="media-heading">系所簡介</h4>
-                        </div>
-                    </div>
-                    <div class="tab media service-box wow fadeInRight" style="cursor:pointer" id="tab_2">
-                        <div class="pull-left">
-                            <i class="fa"></i>
-                        </div>
-                        <div class="media-body">
-                            <h4 class="media-heading">願景目標</h4>
-                        </div>
-                    </div>
-                    <div class="tab media service-box wow fadeInRight" style="cursor:pointer" id="tab_3">
-                        <div class="pull-left">
-                            <i class="fa"></i>
-                        </div>
-                        <div class="media-body">
-                            <h4 class="media-heading">設備資源</h4>
-                        </div>
-                    </div>
-                    <div class="tab media service-box wow fadeInRight" style="cursor:pointer" id="tab_4">
-                        <div class="pull-left">
-                            <i class="fa"></i>
-                        </div>
-                        <div class="media-body">
-                            <h4 class="media-heading">升學就業</h4>
-                        </div>
-                    </div>
-                    <div class="tab media service-box wow fadeInRight" style="cursor:pointer" id="tab_5">
-                        <div class="pull-left">
-                            <i class="fa"></i>
-                        </div>
-                        <div class="media-body" role="presentation" class="active">
-                            <h4 href="#tab" role="tab" data-toggle="tab" aria-controls="tab1" aria-expanded="true"
-                                class="media-heading">系所位置</h4>
-                        </div>
-                    </div>
-                </div>
+            <div class="row" id="left_menu">
+                <script>
+                    if (window.innerWidth < 768) {
+                        document.getElementById('left_menu').innerHTML =`
+                        <ul class="nav nav-pills mb-3 fadeInUp" id="pills-tab" role="tablist">
+                            <li class="nav-item">
+                                <a class="nav-link active" id="tab_1" data-toggle="pill" role="tab"
+                                    aria-controls="pills-home" aria-selected="true">系所簡介</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" id="tab_2" data-toggle="pill" role="tab"
+                                    aria-controls="pills-profile" aria-selected="false">願景目標</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" id="tab_3" data-toggle="pill" role="tab"
+                                    aria-controls="pills-contact" aria-selected="false">設備資源</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" id="tab_4" data-toggle="pill" role="tab"
+                                    aria-controls="pills-contact" aria-selected="false">升學就業</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" id="tab_5" data-toggle="pill" role="tab"
+                                    aria-controls="pills-contact" aria-selected="false">系所位置</a>
+                            </li>
+                        </ul>
+                        `
+                    } else {
+                        document.getElementById('left_menu').innerHTML = `
+                        <div class="left_menu wow fadeInLeft col-sm-2" role="tablist">
+                            <div class="tab media service-box wow fadeInRight" style="cursor:pointer" id="tab_1">
+                                <div class="pull-left">
+                                    <i class="fa"></i>
+                                </div>
+                                <div class="media-body">
+                                    <h4 class="media-heading">系所簡介</h4>
+                                </div>
+                            </div>
+                            <div class="tab media service-box wow fadeInRight" style="cursor:pointer" id="tab_2">
+                                <div class="pull-left">
+                                    <i class="fa"></i>
+                                </div>
+                                <div class="media-body">
+                                    <h4 class="media-heading">願景目標</h4>
+                                </div>
+                            </div>
+                            <div class="tab media service-box wow fadeInRight" style="cursor:pointer" id="tab_3">
+                                <div class="pull-left">
+                                    <i class="fa"></i>
+                                </div>
+                                <div class="media-body">
+                                    <h4 class="media-heading">設備資源</h4>
+                                </div>
+                            </div>
+                            <div class="tab media service-box wow fadeInRight" style="cursor:pointer" id="tab_4">
+                                <div class="pull-left">
+                                    <i class="fa"></i>
+                                </div>
+                                <div class="media-body">
+                                    <h4 class="media-heading">升學就業</h4>
+                                </div>
+                            </div>
+                            <div class="tab media service-box wow fadeInRight" style="cursor:pointer" id="tab_5">
+                                <div class="pull-left">
+                                    <i class="fa"></i>
+                                </div>
+                                <div class="media-body" role="presentation" class="active">
+                                    <h4 href="#tab" role="tab" data-toggle="tab" aria-controls="tab1" aria-expanded="true"
+                                        class="media-heading">系所位置</h4>
+                                </div>
+                            </div>
+                        </div>`;
+                    }
+                </script>
                 <div class="col-sm-10">
                     <div class="page wow fadeInRight" id="page_1">
                         <h2>系所簡介</h2>
@@ -388,16 +418,27 @@
                     <div class="page wow fadeInRight" id="page_5">
                         <h2>系所位置</h2>
                         <h3>淡江大學校內地圖</h3>
-                        <p><br /><iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d2518.149232997237!2d121.44939198577136!3d25.174886999042698!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1szh-TW!2stw!4v1449587217824" width="800" height="450" frameborder="0" style="border:0" allowfullscreen></iframe> </p>
+                        <p><br /><iframe class=" col-sm-12"
+                                src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d2518.149232997237!2d121.44939198577136!3d25.174886999042698!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1szh-TW!2stw!4v1449587217824"
+                                width="800" height="450" frameborder="0" style="border:0" allowfullscreen></iframe> </p>
                         <h3>淡水捷運站至淡江大學(步行)</h3>
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m24!1m8!1m3!1d14443.764468831454!2d121.446671!3d25.171466000000002!3m2!1i1024!2i768!4f13.1!4m13!3e2!4m5!1s0x3442a55882bd80dd%3A0x5759c5a3179df7c6!2z5reh5rC056uZIDI1MeaWsOWMl-W4gua3oeawtOWNgOS4reato-i3rw!3m2!1d25.1677103!2d121.4456755!4m5!1s0x3442aff8d6ee7dcf%3A0x7010f64c7ac4cdc4!2z5reh5rGf5aSn5a245pW45a2457O7IDI1MeaWsOWMl-W4gua3oeawtOWNgA!3m2!1d25.1754242!2d121.4482134!5e0!3m2!1szh-TW!2stw!4v1568099352022!5m2!1szh-TW!2stw" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m24!1m8!1m3!1d14443.764468831454!2d121.446671!3d25.171466000000002!3m2!1i1024!2i768!4f13.1!4m13!3e2!4m5!1s0x3442a55882bd80dd%3A0x5759c5a3179df7c6!2z5reh5rC056uZIDI1MeaWsOWMl-W4gua3oeawtOWNgOS4reato-i3rw!3m2!1d25.1677103!2d121.4456755!4m5!1s0x3442aff8d6ee7dcf%3A0x7010f64c7ac4cdc4!2z5reh5rGf5aSn5a245pW45a2457O7IDI1MeaWsOWMl-W4gua3oeawtOWNgA!3m2!1d25.1754242!2d121.4482134!5e0!3m2!1szh-TW!2stw!4v1568099352022!5m2!1szh-TW!2stw"
+                            width="600" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
                         <h3>淡水捷運站至淡江大學(公車 紅27/756/紅28/紅28直)</h3>
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m28!1m12!1m3!1d7221.738704922457!2d121.44655461369427!3d25.173888905737844!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m13!3e3!4m5!1s0x3442a55882bd80dd%3A0x5759c5a3179df7c6!2z5o236YGL5reh5rC056uZ!3m2!1d25.167817!2d121.44556!4m5!1s0x3442aff8d6ee7dcf%3A0x7010f64c7ac4cdc4!2z5reh5rGf5aSn5a245pW45a2457O7IDI1MeaWsOWMl-W4gg!3m2!1d25.175291299999998!2d121.44824089999999!5e0!3m2!1szh-TW!2stw!4v1441256122764" width="800" height="450" style="border: 0;" frameborder="0" style="border:0" allowfullscreen></iframe><br>
-                        公車：由淡水捷運站出口2右轉，搭乘「紅27/756/紅28/紅28直」直接到淡江大學淡水校區。<br>                            票價15元，車程約5~7分鐘。
+                        <iframe class=" col-sm-12"
+                            src="https://www.google.com/maps/embed?pb=!1m28!1m12!1m3!1d7221.738704922457!2d121.44655461369427!3d25.173888905737844!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m13!3e3!4m5!1s0x3442a55882bd80dd%3A0x5759c5a3179df7c6!2z5o236YGL5reh5rC056uZ!3m2!1d25.167817!2d121.44556!4m5!1s0x3442aff8d6ee7dcf%3A0x7010f64c7ac4cdc4!2z5reh5rGf5aSn5a245pW45a2457O7IDI1MeaWsOWMl-W4gg!3m2!1d25.175291299999998!2d121.44824089999999!5e0!3m2!1szh-TW!2stw!4v1441256122764"
+                            width="800" height="450" style="border: 0;" frameborder="0" style="border:0"
+                            allowfullscreen></iframe><br>
+                        公車：由淡水捷運站出口2右轉，搭乘「紅27/756/紅28/紅28直」直接到淡江大學淡水校區。<br> 票價15元，車程約5~7分鐘。
                         <h3>台2乙線(紅樹林捷運站)至淡江大學(汽機車)</h3>
-                        <iframe src="https://www.google.com/maps/d/embed?mid=zuGQBb5gEuvg.kFpR64Ys3pTE" width="800" height="450"></iframe>
+                        <iframe class=" col-sm-12"
+                            src="https://www.google.com/maps/d/embed?mid=zuGQBb5gEuvg.kFpR64Ys3pTE" width="800"
+                            height="450"></iframe>
                         <h3>高速公路至淡江大學(汽車)</h3>
-                        <iframe src="https://www.google.com/maps/d/embed?mid=1O95Olk5lE9Fy6HiXxxq13OfQdH0" width="640" height="480"></iframe>
+                        <iframe class=" col-sm-12"
+                            src="https://www.google.com/maps/d/embed?mid=1O95Olk5lE9Fy6HiXxxq13OfQdH0" width="640"
+                            height="480"></iframe>
                     </div>
                 </div>
             </div>
