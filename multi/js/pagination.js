@@ -38,7 +38,6 @@ jQuery(document).ready(function () {
 	var current_link1 = 0;
 	var navigation_html1 = '<a class="previous_link1" href="javascript:previous1();"><</a>';
 	while (number_of_pages1 > current_link1) {
-		console.log('owo')
 		navigation_html1 += '<a class="page_link1" href="javascript:go_to_page1(' + current_link1 + ')" longdesc="' + current_link1 + '">' + (current_link1 + 1) + '</a>';
 		current_link1++;
 	}

@@ -9,8 +9,7 @@ jQuery(function ($) {
             <div class="calculus-item-inner" >
 				<img class="img-responsive" src="images/members/${item.job}/${item.name_zh}.jpg">
                 <div class="calculus-info">
-                    <h3>${item.name_zh}</h3>
-                    ${item.job_title}
+                    <h3>${item.name_zh}</h3>${item.job_title}
 					<a class="preview fa fa-eye" href="#${item.name_en}"></a>
                 </div>
             </div>
@@ -76,8 +75,8 @@ jQuery(function ($) {
                         <div class="row">
                             <div class="calculus_info col-sm-6 col-xs-4 col-md-4">
                                 <h2>${item.job_title}</h2>
-                                <h3 class="preview fa fa-list"> 經歷</h3><br>${experienceInfoItem(item)}
-                                <h3 class="preview fa fa-book"> 講授課程</h3><br>${courseInfoItem(item)}
+                                <h3 class="fa fa-list"> 經歷</h3><br>${experienceInfoItem(item)}
+                                <h3 class="fa fa-book"> 講授課程</h3><br>${courseInfoItem(item)}
                             </div>
                             <div class="calculus_info col-sm-6 col-xs-4 col-md-4">
                                 <img class="img-responsive" src="images/members/${item.job}/${item.name_zh}.jpg">
@@ -85,13 +84,13 @@ jQuery(function ($) {
                         </div>
                         <div class="row">
                             <div class="calculus_info col-sm-6 col-xs-4 col-md-4">
-                                <h3 class="preview fa fa-book"> 研究領域</h3><br>${researchInfoItem(item)}
+                                <h3 class="fa fa-book"> 研究領域</h3><br>${researchInfoItem(item)}
                             </div>
                             <div class="calculus_info col-sm-3 col-xs-5 col-md-2">
-                                <h3 class="preview fa fa-book"> 聯絡資訊</h3><br>${contactInfoItem(item)}
+                                <h3 class="fa fa-book"> 聯絡資訊</h3><br>${contactInfoItem(item)}
                             </div>
                             <div class="calculus_info col-sm-3 col-xs-5 col-md-2">
-                                <h3 class="preview fa fa-book"> 教學資源</h3><br>${teachInfoItem(item)}
+                                <h3 class="fa fa-book"> 教學資源</h3><br>${teachInfoItem(item)}
                             </div>
                         </div>
                     </div>

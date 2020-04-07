@@ -16,7 +16,7 @@
     <link href="css/prettyPhoto.css" rel="stylesheet">
     <link href="css/main.css" rel="stylesheet">
     <link href="css/responsive.css" rel="stylesheet">
-    <link href="css/ekko-lightbox.css" rel="stylesheet">
+    <link href="css/popup.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
     <!--[if lt IE 9]>
     <script src="js/html5shiv.js"></script>
@@ -59,7 +59,6 @@
         <!--/nav-->
     </header>
     <!--/header-->
-
     <section id="main-slider">
         <div class="owl-carousel">
             <div class="item" style="background-image: url(images/slider/bg1.jpg); cursor:pointer"
@@ -106,25 +105,45 @@
                 <h2 class="section-title text-center wow fadeInDown">最新消息</h2>
             </div>
             <div class="row">
+                <label for="open-popup">Open The popup</label>
+                <div class="popup__container">
+                    <input type="checkbox" id="open-popup" class="popup__toggler" />
+                    <label class="popup__mask" for="open-popup"></label>
+                    <div class="popup">
+                        <label class="popup__close" for="open-popup"></label>
+                        <div class="popup__header">
+                            <h1 class="popup__title">popup Title</h1>
+                        </div>
+                        <div class="popup__content">
+                            <p>You can click anywhere outside this window to close the popup.You can click anywhere
+                                outside this window to close the popup.You can click anywhere outside this window to
+                                close the popup.</p>
+                        </div>
+                    </div>
+                </div>
                 <div class="col-sm-6 wow fadeInLeft">
                     <h3>系所公告</h3>
-                    <div>
-                        <a class="preview" href="#owo">owo</a><br>
-                    </div>
                     <div class="announcementList">
                         <input type='hidden' id='current_page' />
                         <input type='hidden' id='show_per_page' />
                         <ul id="pagingBox">
-                            <a>7/15-7/17舉辦第二屆海峽兩岸反譜問題與相關課題暨慶祝數學系創系60週年學術研討會，歡迎報名參加。<span class="fa fa-clock-o" style="color: #64686d;">發佈時間: 2019-04-25, 週四</span></a>
-                            <a>7/15-7/17舉辦第二屆海峽兩岸反譜問題與相關課題暨慶祝數學系創系60週年學術研討會，歡迎報名參加。<span class="fa fa-clock-o" style="color: #64686d;">發佈時間: 2019-04-25, 週四</span></a>
-                            <a>7/15-7/17舉辦第二屆海峽兩岸反譜問題與相關課題暨慶祝數學系創系60週年學術研討會，歡迎報名參加。<span class="fa fa-clock-o" style="color: #64686d;">發佈時間: 2019-04-25, 週四</span></a>
-                            <a>7/15-7/17舉辦第二屆海峽兩岸反譜問題與相關課題暨慶祝數學系創系60週年學術研討會，歡迎報名參加。<span class="fa fa-clock-o" style="color: #64686d;">發佈時間: 2019-04-25, 週四</span></a>
-                            <a>7/15-7/17舉辦第二屆海峽兩岸反譜問題與相關課題暨慶祝數學系創系60週年學術研討會，歡迎報名參加。<span class="fa fa-clock-o" style="color: #64686d;">發佈時間: 2019-04-25, 週四</span></a>
-                            <a>7/15-7/17舉辦第二屆海峽兩岸反譜問題與相關課題暨慶祝數學系創系60週年學術研討會，歡迎報名參加。<span class="fa fa-clock-o" style="color: #64686d;">發佈時間: 2019-04-25, 週四</span></a>
-                            <a>7/15-7/17舉辦第二屆海峽兩岸反譜問題與相關課題暨慶祝數學系創系60週年學術研討會，歡迎報名參加。<span class="fa fa-clock-o" style="color: #64686d;">發佈時間: 2019-04-25, 週四</span></a>
+                            <a>7/15-7/17舉辦第二屆海峽兩岸反譜問題與相關課題暨慶祝數學系創系60週年學術研討會，歡迎報名參加。<span class="fa fa-clock-o"
+                                    style="color: #64686d;">發佈時間: 2019-04-25, 週四</span></a>
+                            <a>7/15-7/17舉辦第二屆海峽兩岸反譜問題與相關課題暨慶祝數學系創系60週年學術研討會，歡迎報名參加。<span class="fa fa-clock-o"
+                                    style="color: #64686d;">發佈時間: 2019-04-25, 週四</span></a>
+                            <a>7/15-7/17舉辦第二屆海峽兩岸反譜問題與相關課題暨慶祝數學系創系60週年學術研討會，歡迎報名參加。<span class="fa fa-clock-o"
+                                    style="color: #64686d;">發佈時間: 2019-04-25, 週四</span></a>
+                            <a>7/15-7/17舉辦第二屆海峽兩岸反譜問題與相關課題暨慶祝數學系創系60週年學術研討會，歡迎報名參加。<span class="fa fa-clock-o"
+                                    style="color: #64686d;">發佈時間: 2019-04-25, 週四</span></a>
+                            <a>7/15-7/17舉辦第二屆海峽兩岸反譜問題與相關課題暨慶祝數學系創系60週年學術研討會，歡迎報名參加。<span class="fa fa-clock-o"
+                                    style="color: #64686d;">發佈時間: 2019-04-25, 週四</span></a>
+                            <a>7/15-7/17舉辦第二屆海峽兩岸反譜問題與相關課題暨慶祝數學系創系60週年學術研討會，歡迎報名參加。<span class="fa fa-clock-o"
+                                    style="color: #64686d;">發佈時間: 2019-04-25, 週四</span></a>
+                            <a>7/15-7/17舉辦第二屆海峽兩岸反譜問題與相關課題暨慶祝數學系創系60週年學術研討會，歡迎報名參加。<span class="fa fa-clock-o"
+                                    style="color: #64686d;">發佈時間: 2019-04-25, 週四</span></a>
                         </ul>
                     </div>
-                    <div id ="page_navigation"></div>
+                    <div id="page_navigation"></div>
                 </div>
                 <div class="col-sm-6 wow fadeInRight">
                     <h3>學術活動</h3>
@@ -132,27 +151,27 @@
                         <input type='hidden' id='current_page1' />
                         <input type='hidden' id='show_per_page1' />
                         <ul id="pagingBox1">
-                            <a>7/15-7/17舉辦第二屆海峽兩岸反譜問題與相關課題暨慶祝數學系創系60週年學術研討會，歡迎報名參加。<span class="fa fa-clock-o" style="color: #64686d;">發佈時間: 2019-04-25, 週四</span></a>
-                            <a>7/15-7/17舉辦第二屆海峽兩岸反譜問題與相關課題暨慶祝數學系創系60週年學術研討會，歡迎報名參加。<span class="fa fa-clock-o" style="color: #64686d;">發佈時間: 2019-04-25, 週四</span></a>
-                            <a>7/15-7/17舉辦第二屆海峽兩岸反譜問題與相關課題暨慶祝數學系創系60週年學術研討會，歡迎報名參加。<span class="fa fa-clock-o" style="color: #64686d;">發佈時間: 2019-04-25, 週四</span></a>
-                            <a>7/15-7/17舉辦第二屆海峽兩岸反譜問題與相關課題暨慶祝數學系創系60週年學術研討會，歡迎報名參加。<span class="fa fa-clock-o" style="color: #64686d;">發佈時間: 2019-04-25, 週四</span></a>
-                            <a>7/15-7/17舉辦第二屆海峽兩岸反譜問題與相關課題暨慶祝數學系創系60週年學術研討會，歡迎報名參加。<span class="fa fa-clock-o" style="color: #64686d;">發佈時間: 2019-04-25, 週四</span></a>
-                            <a>7/15-7/17舉辦第二屆海峽兩岸反譜問題與相關課題暨慶祝數學系創系60週年學術研討會，歡迎報名參加。<span class="fa fa-clock-o" style="color: #64686d;">發佈時間: 2019-04-25, 週四</span></a>
-                            <a>7/15-7/17舉辦第二屆海峽兩岸反譜問題與相關課題暨慶祝數學系創系60週年學術研討會，歡迎報名參加。<span class="fa fa-clock-o" style="color: #64686d;">發佈時間: 2019-04-25, 週四</span></a>
+                            <a>7/15-7/17舉辦第二屆海峽兩岸反譜問題與相關課題暨慶祝數學系創系60週年學術研討會，歡迎報名參加。<span class="fa fa-clock-o"
+                                    style="color: #64686d;">發佈時間: 2019-04-25, 週四</span></a>
+                            <a>7/15-7/17舉辦第二屆海峽兩岸反譜問題與相關課題暨慶祝數學系創系60週年學術研討會，歡迎報名參加。<span class="fa fa-clock-o"
+                                    style="color: #64686d;">發佈時間: 2019-04-25, 週四</span></a>
+                            <a>7/15-7/17舉辦第二屆海峽兩岸反譜問題與相關課題暨慶祝數學系創系60週年學術研討會，歡迎報名參加。<span class="fa fa-clock-o"
+                                    style="color: #64686d;">發佈時間: 2019-04-25, 週四</span></a>
+                            <a>7/15-7/17舉辦第二屆海峽兩岸反譜問題與相關課題暨慶祝數學系創系60週年學術研討會，歡迎報名參加。<span class="fa fa-clock-o"
+                                    style="color: #64686d;">發佈時間: 2019-04-25, 週四</span></a>
+                            <a>7/15-7/17舉辦第二屆海峽兩岸反譜問題與相關課題暨慶祝數學系創系60週年學術研討會，歡迎報名參加。<span class="fa fa-clock-o"
+                                    style="color: #64686d;">發佈時間: 2019-04-25, 週四</span></a>
+                            <a>7/15-7/17舉辦第二屆海峽兩岸反譜問題與相關課題暨慶祝數學系創系60週年學術研討會，歡迎報名參加。<span class="fa fa-clock-o"
+                                    style="color: #64686d;">發佈時間: 2019-04-25, 週四</span></a>
+                            <a>7/15-7/17舉辦第二屆海峽兩岸反譜問題與相關課題暨慶祝數學系創系60週年學術研討會，歡迎報名參加。<span class="fa fa-clock-o"
+                                    style="color: #64686d;">發佈時間: 2019-04-25, 週四</span></a>
                         </ul>
                     </div>
-                    <div id ="page_navigation1"></div>
+                    <div id="page_navigation1"></div>
                 </div>
             </div>
-            <div class="lightbox" id="owo">
-                <figure>
-                    <a href="#news" class="close"></a>
-                    <figcaption>
-                        <a>7/15-7/17舉辦第二屆海峽兩岸反譜問題與相關課題暨慶祝數學系創系60週年學術研討會，歡迎報名參加。</a>
-                    </figcaption>
-                </figure>
-            </div>
         </div>
+
     </section>
     <section id="introduction">
         <div class="container">
@@ -211,7 +230,8 @@
                         </div>
                         <div class="media-body">
                             <h4 class="media-heading">系所位置</h4>
-                            <p>淡江大學校內地圖、捷運站至淡江大學(步行)、捷運站至淡江大學(公車 紅27/756/紅28/紅28直)、台2乙線(紅樹林捷運站)至淡江大學(汽機車)、高速公路至淡江大學(汽車)</p>
+                            <p>淡江大學校內地圖、捷運站至淡江大學(步行)、捷運站至淡江大學(公車 紅27/756/紅28/紅28直)、台2乙線(紅樹林捷運站)至淡江大學(汽機車)、高速公路至淡江大學(汽車)
+                            </p>
                         </div>
                     </div>
                 </div>
@@ -718,7 +738,6 @@
 
     <!-- include angular js -->
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.15/angular.min.js"></script>
-
 </body>
 
 </html>

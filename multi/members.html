@@ -16,6 +16,7 @@
     <link href="css/prettyPhoto.css" rel="stylesheet">
     <link href="css/introduction.css" rel="stylesheet">
     <link href="css/responsive.css" rel="stylesheet">
+    <link href="css/popup.css" rel="stylesheet">
     <!--[if lt IE 9]>
     <script src="js/html5shiv.js"></script>
     <script src="js/respond.min.js"></script>
@@ -61,61 +62,199 @@
     <!--/header-->
     <section id="introduction">
         <div class="container">
-            <div class="row">
-                <div class="left_menu wow fadeInLeft col-md-2 col-xs-12 col-sm-2" role="tablist">
-                    <div class="tab media service-box wow fadeInRight" style="cursor:pointer">
-                        <div class="pull-left">
-                            <i class="fa"></i>
-                        </div>
-                        <div class="calculus-filter media-body">
-                            <a class="active" href="#" data-filter="*">系所成員</a>
-                        </div>
-                    </div>
-                    <div class="tab media service-box wow fadeInRight" style="cursor:pointer">
-                        <div class="pull-left">
-                            <i class="fa"></i>
-                        </div>
-                        <div class="calculus-filter media-body">
-                            <a class="#" href="#" data-filter=".full-time">專任師資</a>
-                        </div>
-                    </div>
-                    <div class="tab media service-box wow fadeInRight" style="cursor:pointer">
-                        <div class="pull-left">
-                            <i class="fa"></i>
-                        </div>
-                        <div class="calculus-filter media-body">
-                            <a class="#" href="#" data-filter=".part-time">兼任師資</a>
-                        </div>
-                    </div>
-                    <div class="tab  media service-box wow fadeInRight" style="cursor:pointer">
-                        <div class="pull-left">
-                            <i class="fa"></i>
-                        </div>
-                        <div class="calculus-filter media-body">
-                            <a class="#" href="#" data-filter=".teaching-assistant">教學助理</a>
-                        </div>
-                    </div>
-                    <div class="tab media service-box wow fadeInRight" style="cursor:pointer">
-                        <div class="pull-left">
-                            <i class="fa"></i>
-                        </div>
-                        <div class="calculus-filter media-body">
-                            <a class="#" href="#" data-filter=".staff">系所助理</a>
-                        </div>
-                    </div>
-                    <div class="tab media service-box wow fadeInRight" style="cursor:pointer">
-                        <div class="pull-left">
-                            <i class="fa"></i>
-                        </div>
-                        <div class="calculus-filter media-body">
-                            <a class="#" href="#" data-filter=".retired">退休教師</a>
-                        </div>
-                    </div>
-                </div>
+            <div class="row" id="left_menu">
+                <script>
+                    if (window.innerWidth < 768) {
+                        document.getElementById('left_menu').innerHTML =`
+                        <ul class="nav nav-pills mb-3 fadeInUp" id="pills-tab" role="tablist">
+                            <li class="nav-item calculus-filter media-body">
+                                <a class="nav-link active" id="tab_1" data-toggle="pill" role="tab"
+                                    aria-controls="pills-home" aria-selected="true" data-filter="*">系所成員</a>
+                            </li>
+                            <li class="nav-item calculus-filter media-body">
+                                <a class="nav-link #" id="tab_2" data-toggle="pill" role="tab"
+                                    aria-controls="pills-profile" aria-selected="false" data-filter=".full-time">專任師資</a>
+                            </li>
+                            <li class="nav-item calculus-filter media-body">
+                                <a class="nav-link" id="tab_3" data-toggle="pill" role="tab"
+                                    aria-controls="pills-contact" aria-selected="false" data-filter=".part-time">兼任師資</a>
+                            </li>
+                            <li class="nav-item calculus-filter media-body">
+                                <a class="nav-link" id="tab_4" data-toggle="pill" role="tab"
+                                    aria-controls="pills-contact" aria-selected="false" data-filter=".teaching-assistant">教學助理</a>
+                            </li>
+                            <li class="nav-item calculus-filter media-body">
+                                <a class="nav-link" id="tab_5" data-toggle="pill" role="tab"
+                                    aria-controls="pills-contact" aria-selected="false" data-filter=".staff">系所助理</a>
+                            </li>
+                            <li class="nav-item calculus-filter media-body">
+                                <a class="nav-link" id="tab_5" data-toggle="pill" role="tab"
+                                    aria-controls="pills-contact" aria-selected="false" data-filter=".retired">退休教師</a>
+                            </li>
+                        </ul>
+                        `
+                    } else {
+                        document.getElementById('left_menu').innerHTML = `
+                        <div class="left_menu wow fadeInLeft col-md-2 col-xs-12 col-sm-2" role="tablist">
+                            <div class="tab media service-box wow fadeInRight" style="cursor:pointer">
+                                <div class="pull-left">
+                                    <i class="fa"></i>
+                                </div>
+                                <div class="calculus-filter media-body">
+                                    <a class="active" href="#" data-filter="*">系所成員</a>
+                                </div>
+                            </div>
+                            <div class="tab media service-box wow fadeInRight" style="cursor:pointer">
+                                <div class="pull-left">
+                                    <i class="fa"></i>
+                                </div>
+                                <div class="calculus-filter media-body">
+                                    <a class="#" href="#" data-filter=".full-time">專任師資</a>
+                                </div>
+                            </div>
+                            <div class="tab media service-box wow fadeInRight" style="cursor:pointer">
+                                <div class="pull-left">
+                                    <i class="fa"></i>
+                                </div>
+                                <div class="calculus-filter media-body">
+                                    <a class="#" href="#" data-filter=".part-time">兼任師資</a>
+                                </div>
+                            </div>
+                            <div class="tab  media service-box wow fadeInRight" style="cursor:pointer">
+                                <div class="pull-left">
+                                    <i class="fa"></i>
+                                </div>
+                                <div class="calculus-filter media-body">
+                                    <a class="#" href="#" data-filter=".teaching-assistant">教學助理</a>
+                                </div>
+                            </div>
+                            <div class="tab media service-box wow fadeInRight" style="cursor:pointer">
+                                <div class="pull-left">
+                                    <i class="fa"></i>
+                                </div>
+                                <div class="calculus-filter media-body">
+                                    <a class="#" href="#" data-filter=".staff">系所助理</a>
+                                </div>
+                            </div>
+                            <div class="tab media service-box wow fadeInRight" style="cursor:pointer">
+                                <div class="pull-left">
+                                    <i class="fa"></i>
+                                </div>
+                                <div class="calculus-filter media-body">
+                                    <a class="#" href="#" data-filter=".retired">退休教師</a>
+                                </div>
+                            </div>
+                        </div>`;
+                    }
+                </script>
                 <div class="members_filter wow fadeInRight col-md-10 col-xs-12 col-sm-10">
-                    <div class="calculus-items" id="memberPhoto"></div>
+                    <div class="calculus-items" id="memberPhoto">
+                        <label for="Yang,Ting-Hui" class="calculus-item part-time col-md-3 col-xs-6 col-sm-4">
+                            <div class="calculus-item-inner" >
+                                <img class="img-responsive" src="images/members/part-time/方仁駿.jpg">
+                                <div class="calculus-info">
+                                    <h3>楊定揮</h3>專任教授兼系主任
+                                    <a class="preview fa fa-eye"></a>
+                                </div>
+                            </div>
+                        </label>
+                        <label for="${item.name_en}" class="calculus-item part-time col-md-3 col-xs-6 col-sm-4">
+                            <div class="calculus-item-inner" >
+                                <img class="img-responsive" src="images/members/part-time/方仁駿.jpg">
+                                <div class="calculus-info">
+                                    <h3>${item.name_zh}</h3>${item.name_en}
+                                    <a class="preview fa fa-eye"></a>
+                                </div>
+                            </div>
+                        </label>
+                    </div>
                 </div>
-                <div id="memberInfo"></div>
+                <div id="memberInfo">
+                    <div class="popup__container">
+                        <input type="checkbox" id="${item.name_en}" class="popup__toggler" />
+                        <label class="popup__mask" for="${item.name_en}"></label>
+                        <div class="popup">
+                            <label class="popup__close" for="${item.name_en}"></label>
+                            <div class="popup__header">
+                                <h1 class="popup__title">${item.name_zh} ${item.name_en}</h1>
+                            </div>
+                            <div class="popup__content">
+                                <div class="row">
+                                    <div class="calculus_info col-sm-6 col-xs-4 col-md-4">
+                                        <h2>${item.job_title}</h2>
+                                        <h3 class="preview fa fa-list"> 經歷</h3><br>${experienceInfoItem(item)}
+                                        <h3 class="fa fa-book"> 講授課程</h3><br>${courseInfoItem(item)}
+                                    </div>
+                                    <div class="calculus_info col-sm-6 col-xs-4 col-md-4">
+                                        <img class="img-responsive" src="images/members/part-time/方仁駿.jpg">
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="calculus_info col-sm-6 col-xs-4 col-md-4">
+                                        <h3 class="fa fa-book"> 研究領域</h3><br>${researchInfoItem(item)}
+                                    </div>
+                                    <div class="calculus_info col-sm-3 col-xs-5 col-md-2">
+                                        <h3 class="fa fa-book"> 聯絡資訊</h3><br>${contactInfoItem(item)}
+                                    </div>
+                                    <div class="calculus_info col-sm-3 col-xs-5 col-md-2">
+                                        <h3 class="fa fa-book"> 教學資源</h3><br>${teachInfoItem(item)}
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="popup__container">
+                        <input type="checkbox" id="Yang,Ting-Hui" class="popup__toggler" />
+                        <label class="popup__mask" for="Yang,Ting-Hui"></label>
+                        <div class="popup">
+                            <label class="popup__close" for="Yang,Ting-Hui"></label>
+                            <div class="popup__header">
+                                <h1 class="popup__title">楊定揮 Yang,Ting-Hui</h1>
+                            </div>
+                            <div class="popup__content">
+                                <h2>專任教授兼系主任</h2>
+                                <div class="row calculus_info">
+                                    <img class="img-responsive col-md-6" src="images/members/full-time/黃逸輝.jpg">
+                                    <div class="col-md-6">
+                                        <h3 class="fa fa-list"> 經歷</h3>
+                                        <li>2010/08~2015/07　淡江大學　副教授</li>
+                                        <li>2010/08~2015/07　淡江大學　副教授</li>
+                                        <li>2010/08~2015/07　淡江大學　副教授</li>
+                                        <h3 class="fa fa-book"> 講授課程</h3>
+                                        <li>淡江大學　副教授</li>
+                                        <li>淡江大學　副教授</li>
+                                        <li>淡江大學　副教授</li>
+                                    </div>
+                                </div>
+                                <div class="row calculus_info">
+                                    <div class="col-md-4">
+                                        <h3 class="fa fa-book"> 聯絡資訊</h3>
+                                        <li>2010/08~2015/07　淡江大學　副教授</li>
+                                        <li>2010/08~2015/07　淡江大學　副教授</li>
+                                        <li>2010/08~2015/07　淡江大學　副教授</li>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <h3 class="fa fa-book"> 研究領域</h3><br>
+                                        <li>2010/08~2015/07　淡江大學　副教授</li>
+                                        <li>2010/08~2015/07　淡江大學　副教授</li>
+                                        <li>2010/08~2015/07　淡江大學　副教授</li>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <h3 class="fa fa-book"> 教學資源</h3>
+                                        <li>教學支援平台</li>
+                                        <li>教師歷程</li>
+                                        <li>個人網站</li>
+                                    </div>
+                                </div>
+                                <div>
+                                    <h3>科技部研究案</h3>
+                                    <h3>期刊論文</h3>
+                                    <h3>會議論文</h3>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>

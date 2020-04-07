@@ -1,0 +1,97 @@
+@mixin vishidden {
+    position: absolute;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+    opacity: 0;
+    height: 1px;
+    width: 1px;
+    margin: -1px;
+    padding: 0;
+    border: 0;
+}
+
+.popup h2 {
+    font-size: 25px;
+}
+
+.popup h3 {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.popup {
+    position: fixed;
+    top: 50%;
+    z-index: 1101;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: 0 auto;
+    opacity: 1;
+    transition: margin-top 150ms ease-out,
+    opacity 150ms ease-out;
+    background: #eee;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.6);
+
+
+    // This is the hidden checkbox.
+    &__toggler {
+        display: none;
+
+        // If the checkbox is not checked, hide the .popup and .popup__mask
+        &:not(:checked) {
+            ~.popup {
+                @include vishidden;
+                margin-top: -10px; // Here is where you can add some styles for transitions.
+            }
+
+            ~.popup__mask {
+                @include vishidden;
+            }
+        }
+    }
+
+    &__mask {
+        position: fixed;
+        height: 100%;
+        width: 100%;
+        top: 0;
+        left: 0;
+        opacity: 1;
+        transition: opacity 150ms ease-out;
+        background: RGBA(0, 0, 0, 0.7);
+        cursor: pointer;
+        z-index: 1100;
+    }
+
+    &__close {
+        &::after {
+            content: "\2715"; // Close symbol (X)
+            position: absolute;
+            display: inline-block;
+            padding: 5px;
+            top: 10px;
+            right: 10px;
+            font-size: 18px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+    }
+
+    &__title {
+        margin: 0;
+    }
+
+    &__header {
+        padding: 5px 30px;
+    }
+
+    &__content {
+        padding: 0 30px;
+        max-height: 80vh;
+        overflow-y: auto;
+
+        @media screen and (max-width: 768px) {
+            max-width: 90vh; // Landscape orientation delivers a landscape modal
+        }
+    }
+}
