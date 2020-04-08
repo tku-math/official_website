@@ -1,158 +1,187 @@
 [
     {
-    "job": "full-time",
-    "name_zh": "楊定揮",
-    "name_en": "Yang,Ting-Hui",
-    "job_title":"專任教授兼系主任",
-    "education":"國立交通大學博士",
-    "experience":{
-        "experience1":"2010/08~2015/07　淡江大學　副教授",
-        "experience2":"2004/08~2010/07　淡江大學　助理教授",
-        "experience3":"2003/08~2004/07　國家理論中心　博士後研究員"
+        "job": "full-time",
+        "name_zh": "楊定揮",
+        "name_en": "Yang,Ting-Hui",
+        "job_title": "專任教授兼系主任",
+        "education": "國立交通大學博士",
+        "experience": {
+            "experience1": "2010/08~2015/07　淡江大學　副教授",
+            "experience2": "2004/08~2010/07　淡江大學　助理教授",
+            "experience3": "2003/08~2004/07　國家理論中心　博士後研究員"
         },
-    "course":{
-        "course1":"微積分(資工AB)",
-        "course2":"基礎數學方法(一)",
-        "course3":"高等微積分(資統)"
+        "course": {
+            "course1": "微積分(資工AB)",
+            "course2": "基礎數學方法(一)",
+            "course3": "高等微積分(資統)"
         },
-    "research":{
-        "research1":"2010/08~2015/07　淡江大學　副教授",
-        "research2":"2004/08~2010/07　淡江大學　助理教授",
-        "research3":"2003/08~2004/07　國家理論中心　博士後研究員"
+        "research": {
+            "research1": "微分方程",
+            "research2": "數值分析"
         },
-    "contact":{
-        "email":"thyang@mail.tku.edu.tw",
-        "location":"研究室 S407",
-        "phone":"分機 3136"
+        "contact": {
+            "email": "thyang@mail.tku.edu.tw",
+            "location": "研究室 S407",
+            "phone": "分機 3136"
         },
-    "teach":{
-        "teach1":"教學支援平台",
-        "teach2":"教師歷程"
+        "teach": {
+            "teach1": "教學支援平台",
+            "teach2": "教師歷程"
+        },
+        "techResearch": {
+            "title": {
+                "paper1": "有差別測量誤差問題之誤差增量方法, 黃逸輝 HUANG YIH-HUEI, 99-1",
+                "paper2": "廣義線性混合效用測量誤差模式中的條件分數估計法(2/2), 黃逸輝 HUANG YIH-HUEI, 98-1"
+            },
+            "link": {
+                "link1": "http://teacher.tku.edu.tw/StfFdDtl.aspx?tid=265174",
+                "link2": "http://teacher.tku.edu.tw/StfFdDtl.aspx?tid=265173"
+            }
+        },
+        "paper": {
+            "title": {
+                "paper1": "有差別測量誤差問題之誤差增量方法, 黃逸輝 HUANG YIH-HUEI, 99-1",
+                "paper2": "廣義線性混合效用測量誤差模式中的條件分數估計法(2/2), 黃逸輝 HUANG YIH-HUEI, 98-1"
+            },
+            "link": {
+                "link1": "http://teacher.tku.edu.tw/StfFdDtl.aspx?tid=265174",
+                "link2": "http://teacher.tku.edu.tw/StfFdDtl.aspx?tid=265173"
+            }
+        },
+        "confPaper": {
+            "title": {
+                "paper1": "有差別測量誤差問題之誤差增量方法, 黃逸輝 HUANG YIH-HUEI, 99-1",
+                "paper2": "廣義線性混合效用測量誤差模式中的條件分數估計法(2/2), 黃逸輝 HUANG YIH-HUEI, 98-1"
+            },
+            "link": {
+                "link1": "http://teacher.tku.edu.tw/StfFdDtl.aspx?tid=265174",
+                "link2": "http://teacher.tku.edu.tw/StfFdDtl.aspx?tid=265173"
+            }
         }
     },
     {
-    "job": "full-time",
-    "name_zh": "黃逸輝",
-    "name_en": "Yang",
-    "job_title":"專任教授兼系主任",
-    "education":"國立交通大學博士",
-    "experience":{
-        "experience1":"2010　淡江大學　副教授"
+        "job": "full-time",
+        "name_zh": "黃逸輝",
+        "name_en": "Yang",
+        "job_title": "專任教授兼系主任",
+        "education": "國立交通大學博士",
+        "experience": {
+            "experience1": "2010　淡江大學　副教授"
         },
-    "course":{
-        "course1":"微積分(資工AB)"
+        "course": {
+            "course1": "微積分(資工AB)"
         },
-    "research":{
-        "research1":"2010/08~2015/07　淡江大學　副教授"
+        "research": {
+            "research1": "2010/08~2015/07　淡江大學　副教授"
         },
-    "contact":{
-        "email":"thyang@mail.tku.edu.tw",
-        "location":"研究室 S407",
-        "phone":"分機 3136"
+        "contact": {
+            "email": "thyang@mail.tku.edu.tw",
+            "location": "研究室 S407",
+            "phone": "分機 3136"
         },
-    "teach":{
-        "teach1":"教學支援平台",
-        "teach2":"教師歷程"
+        "teach": {
+            "teach1": "教學支援平台",
+            "teach2": "教師歷程"
         }
     },
     {
-    "job": "full-time",
-    "name_zh": "黃逸輝",
-    "name_en": "ng",
-    "job_title":"專任教授兼系主任",
-    "education":"國立交通大學博士",
-    "experience":{
-        "experience1":"2010　淡江大學　副教授"
+        "job": "full-time",
+        "name_zh": "黃逸輝",
+        "name_en": "ng",
+        "job_title": "專任教授兼系主任",
+        "education": "國立交通大學博士",
+        "experience": {
+            "experience1": "2010　淡江大學　副教授"
         },
-    "course":{
-        "course1":"微積分(資工AB)"
+        "course": {
+            "course1": "微積分(資工AB)"
         },
-    "research":{
-        "research1":"2010/08~2015/07　淡江大學　副教授"
+        "research": {
+            "research1": "2010/08~2015/07　淡江大學　副教授"
         },
-    "contact":{
-        "email":"thyang@mail.tku.edu.tw",
-        "location":"研究室 S407",
-        "phone":"分機 3136"
+        "contact": {
+            "email": "thyang@mail.tku.edu.tw",
+            "location": "研究室 S407",
+            "phone": "分機 3136"
         },
-    "teach":{
-        "teach1":"教學支援平台",
-        "teach2":"教師歷程"
+        "teach": {
+            "teach1": "教學支援平台",
+            "teach2": "教師歷程"
         }
     },
     {
-    "job": "full-time",
-    "name_zh": "黃逸輝",
-    "name_en": "Yang-",
-    "job_title":"專任教授兼系主任",
-    "education":"國立交通大學博士",
-    "experience":{
-        "experience1":"2010　淡江大學　副教授"
+        "job": "full-time",
+        "name_zh": "黃逸輝",
+        "name_en": "Yang-",
+        "job_title": "專任教授兼系主任",
+        "education": "國立交通大學博士",
+        "experience": {
+            "experience1": "2010　淡江大學　副教授"
         },
-    "course":{
-        "course1":"微積分(資工AB)"
+        "course": {
+            "course1": "微積分(資工AB)"
         },
-    "research":{
-        "research1":"2010/08~2015/07　淡江大學　副教授"
+        "research": {
+            "research1": "2010/08~2015/07　淡江大學　副教授"
         },
-    "contact":{
-        "email":"thyang@mail.tku.edu.tw",
-        "location":"研究室 S407",
-        "phone":"分機 3136"
+        "contact": {
+            "email": "thyang@mail.tku.edu.tw",
+            "location": "研究室 S407",
+            "phone": "分機 3136"
         },
-    "teach":{
-        "teach1":"教學支援平台",
-        "teach2":"教師歷程"
+        "teach": {
+            "teach1": "教學支援平台",
+            "teach2": "教師歷程"
         }
     },
     {
-    "job": "full-time",
-    "name_zh": "黃逸輝",
-    "name_en": "Yag-",
-    "job_title":"專任教授兼系主任",
-    "education":"國立交通大學博士",
-    "experience":{
-        "experience1":"2010　淡江大學　副教授"
+        "job": "full-time",
+        "name_zh": "黃逸輝",
+        "name_en": "Yag-",
+        "job_title": "專任教授兼系主任",
+        "education": "國立交通大學博士",
+        "experience": {
+            "experience1": "2010　淡江大學　副教授"
         },
-    "course":{
-        "course1":"微積分(資工AB)"
+        "course": {
+            "course1": "微積分(資工AB)"
         },
-    "research":{
-        "research1":"2010/08~2015/07　淡江大學　副教授"
+        "research": {
+            "research1": "2010/08~2015/07　淡江大學　副教授"
         },
-    "contact":{
-        "email":"thyang@mail.tku.edu.tw",
-        "location":"研究室 S407",
-        "phone":"分機 3136"
+        "contact": {
+            "email": "thyang@mail.tku.edu.tw",
+            "location": "研究室 S407",
+            "phone": "分機 3136"
         },
-    "teach":{
-        "teach1":"教學支援平台",
-        "teach2":"教師歷程"
+        "teach": {
+            "teach1": "教學支援平台",
+            "teach2": "教師歷程"
         }
     },
     {
-    "job": "full-time",
-    "name_zh": "黃逸輝",
-    "name_en": "Ya-",
-    "job_title":"專任教授兼系主任",
-    "education":"國立交通大學博士",
-    "experience":{
-        "experience1":"2010　淡江大學　副教授"
+        "job": "full-time",
+        "name_zh": "黃逸輝",
+        "name_en": "Ya-",
+        "job_title": "專任教授兼系主任",
+        "education": "國立交通大學博士",
+        "experience": {
+            "experience1": "2010　淡江大學　副教授"
         },
-    "course":{
-        "course1":"微積分(資工AB)"
+        "course": {
+            "course1": "微積分(資工AB)"
         },
-    "research":{
-        "research1":"2010/08~2015/07　淡江大學　副教授"
+        "research": {
+            "research1": "2010/08~2015/07　淡江大學　副教授"
         },
-    "contact":{
-        "email":"thyang@mail.tku.edu.tw",
-        "location":"研究室 S407",
-        "phone":"分機 3136"
+        "contact": {
+            "email": "thyang@mail.tku.edu.tw",
+            "location": "研究室 S407",
+            "phone": "分機 3136"
         },
-    "teach":{
-        "teach1":"教學支援平台",
-        "teach2":"教師歷程"
+        "teach": {
+            "teach1": "教學支援平台",
+            "teach2": "教師歷程"
         }
     }
 ]

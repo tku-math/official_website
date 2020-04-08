@@ -50,6 +50,13 @@ a {
     transition: color 400ms, background-color 400ms;
     word-wrap: break-word;
 }
+label {
+    color: #45aed6;
+    -webkit-transition: color 400ms, background-color 400ms;
+    transition: color 400ms, background-color 400ms;
+    word-wrap: break-word;
+    font-weight: normal !important;
+}
 
 #news {
     padding: 100px 0;

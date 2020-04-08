@@ -568,80 +568,20 @@ ul.nostyle i {
 
 
 /* lightbox */
-#introduction .lightbox {
+#introduction .popup {
     display: none;
 }
-#introduction .lightbox h1{
+#introduction .popup h1{
     font-size: 30px;
 }
-#introduction .lightbox .calculus_info h2{
+#introduction .popup .calculus_info h2{
     font-size: 25px;
     line-height: 12px;
 }
-#introduction .lightbox .calculus_info h3{
+#introduction .popup .calculus_info h3{
     font-size: 18px;
     font-weight: bold;
     line-height: 12px;
-}
-
-/* Opened lightbox */
-#introduction .lightbox:target {
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-/* Lightbox content */
-#introduction .lightbox figcaption {
-    width: 80rem;
-    position: relative;
-    top: 25px;
-    left: 50%;
-    padding: 1.5em;
-    background-color: white;
-    margin: auto;
-    z-index: 1;
-}
-
-/* Close button */
-#introduction .lightbox .close {
-    position: relative;
-    display: block;
-    top: 25px;
-}
-
-#introduction .lightbox .close::after {
-    right: -1rem;
-    top: -1rem;
-    width: 2rem;
-    height: 2rem;
-    position: absolute;
-    display: flex;
-    z-index: 1;
-    align-items: center;
-    justify-content: center;
-    background-color: black;
-    border-radius: 50%;
-    color: white;
-    content: "×";
-    cursor: pointer;
-}
-
-/* Lightbox overlay */
-#introduction .lightbox .close::before {
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    position: fixed;
-    background-color: rgba(0, 0, 0, .7);
-    content: "";
-    cursor: default;
 }
 
 .nav.main-tab {
