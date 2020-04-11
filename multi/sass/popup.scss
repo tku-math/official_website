@@ -86,9 +86,5 @@
         line-height: 1.4;
         max-height: 80vh;
         overflow-y: auto;
-
-        @media screen and (max-width: 768px) {
-            max-width: 90vh; // Landscape orientation delivers a landscape modal
-        }
     }
 }
