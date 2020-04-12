@@ -80,7 +80,7 @@ jQuery(function ($) {
                     <div class="row calculus_info">
                         <img class="img-responsive col-md-6" src="images/members/${item.job}/${item.name_zh}.jpg">
                         <div class="col-md-6">
-                            <h3 class="fa fa-list">經歷</h3>${experienceInfoItem(item)}
+                            <h3 class="fa fa-list"> 經歷</h3>${experienceInfoItem(item)}
                             <h3 class="fa fa-book"> 講授課程</h3>${courseInfoItem(item)}
                         </div>
                     </div>

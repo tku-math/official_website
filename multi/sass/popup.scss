@@ -10,11 +10,6 @@
     border: 0;
 }
 
-.popup h2 {
-    font-size: 25px;
-}
-
-
 .popup {
     position: fixed;
     top: 50%;
@@ -83,7 +78,7 @@
 
     &__content {
         padding: 0 30px;
-        line-height: 1.4;
+        line-height: 26px;
         max-height: 80vh;
         overflow-y: auto;
     }

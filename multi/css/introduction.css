@@ -434,26 +434,15 @@ ul.nostyle i {
     padding: 100px 0;
 }
 
-#program {
-    padding: 100px 0;
-}
-
-#introduction .media.service-box:first-child {
-    margin-top: 8px;
-}
-
 #members {
     padding: 150px 0 75px;
 }
-
 .media.service-box {
     margin: 20px 0;
 }
-
 .media.service-box .pull-left {
     margin-right: 20px;
 }
-
 .media.service-box .pull-left>i {
     font-size: 24px;
     height: 32px;
@@ -468,7 +457,6 @@ ul.nostyle i {
     transition: background-color 400ms, background-color 400ms;
     position: relative;
 }
-
 .media.service-box .pull-left>i:after {
     content: "";
     position: absolute;
@@ -481,7 +469,6 @@ ul.nostyle i {
     border-radius: 20px;
     background: #45aed6;
 }
-
 .media.service-box:hover .pull-left>i {
     background-image: -webkit-gradient(linear, left top, right top, from(#2caab3), to(#2c8cb3));
     background-image: linear-gradient(90deg, #2caab3 0%, #2c8cb3 100%);
@@ -489,7 +476,6 @@ ul.nostyle i {
     box-shadow: inset 0 0 0 5px rgba(255, 255, 255, 0.8);
     -webkit-box-shadow: inset 0 0 0 5px rgba(255, 255, 255, 0.8);
 }
-
 
 #introduction .calculus-filter {
     list-style: none;
@@ -564,24 +550,6 @@ ul.nostyle i {
 
 #introduction .calculus-item:hover .calculus-info {
     opacity: 1;
-}
-
-
-/* lightbox */
-#introduction .popup {
-    display: none;
-}
-#introduction .popup h1{
-    font-size: 30px;
-}
-#introduction .popup .calculus_info h2{
-    font-size: 25px;
-    line-height: 12px;
-}
-#introduction .popup .calculus_info h3{
-    font-size: 18px;
-    font-weight: bold;
-    line-height: 12px;
 }
 
 .nav.main-tab {
@@ -695,4 +663,10 @@ ul.nostyle i {
 .form-control {
     box-shadow: none;
     -webkit-box-shadow: none;
+}
+
+
+.popup h3{
+    font-size: 18px;
+    font-weight: bold;
 }

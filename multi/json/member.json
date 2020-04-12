@@ -63,7 +63,7 @@
         "job": "full-time",
         "name_zh": "黃逸輝",
         "name_en": "Yang",
-        "job_title": "專任教授兼系主任",
+        "job_title": "專任教授",
         "education": "國立交通大學博士",
         "experience": {
             "experience1": "2010　淡江大學　副教授"
@@ -72,7 +72,11 @@
             "course1": "微積分(資工AB)"
         },
         "research": {
-            "research1": "2010/08~2015/07　淡江大學　副教授"
+            "research1": "微分方程",
+            "research2": "數值分析",
+            "research3": "owo",
+            "research4": "數值分析",
+            "research5": "數值分析"
         },
         "contact": {
             "email": "thyang@mail.tku.edu.tw",
