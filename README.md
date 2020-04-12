@@ -1,2 +1,3 @@
-# Practicing Git
-# Test_commit
+# TKU Math Official Website
+## 淡江大學數學系 2020 首版系網上線啦
+### 專業教授在系上等你來入學，絕對給你不一樣想像的數學系！

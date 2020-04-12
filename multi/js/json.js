@@ -113,7 +113,6 @@ jQuery(function ($) {
             var wrapperphoto = document.getElementById('memberPhoto')
             var wrapperInfo = document.getElementById('memberInfo')
             memberInfo.forEach(function (response) {
-                console.log('owo')
                 wrapperphoto.innerHTML += memberPhotoItem(response)
                 wrapperInfo.innerHTML += memberInfoItem(response)
             })
